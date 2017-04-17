@@ -8,9 +8,10 @@ real-time pixelwised semantic segmentation
 4. ReLU
 5. max-pooling with a 2 x 2 window and stride 2
 6. save **boundary information**: memorize the max position
-7. 
 
 ## decoder network
-1. 13 layers corresponding the encode network
-2. 
+1. upsamples its input feature map(s) using the memorized max-pooling indices -> produces
+sparse feature map
+2. convolved with a trainable decoder filter bank to produce dense feature maps
+3. softmax
 ## pixelwise classification layer
