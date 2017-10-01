@@ -8,3 +8,6 @@
 8. git log
 9. git reset [--hard] HEAD^
 10. git reflog
+11. git checkout -- file_name
+12. git reset HEAD file
+13. git rm
